@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" href="../media/icon.png">
+     <!--Fuentes de google-->
+     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=El+Messiri&display=swap" rel="stylesheet">
+    <!--Estilos-->
+    <link href="css/principal.css" rel="stylesheet" type="text/css"/> 
+    <!--Titulo-->
+    <title>Apex Legends</title>
+</head>
+<body>
+    <div id="title"><strong>Shurima</strong> <br> Apex Legends Club</div>
+        <!--Opciones y logo-->
+    <div id="inicio">
+      <button class="button" id="acerca" type="button" name="button">Acerca De</button>
+      <button class="button" id="destacado" type="button" name="button">Destacado</button>
+      <div id="boton">
+        <button id="button" type="button" name="button">¡Regístrate!</button>
+      </div>
+    </div>
+
+    <!--Java Script para eventos en los botones-->
+    <script>
+      let acerca= document.getElementById("acerca");
+      acerca.addEventListener("click", ()=>{
+        window.location = "html/AcercaDe.html";
+      });
+      let destacado= document.getElementById("destacado");
+      destacado.addEventListener("click", ()=>{
+        window.location = "html/destacado.html";
+      });
+      let button= document.getElementById("button");
+      button.addEventListener("click", ()=>{
+        window.location = "html/formulario.html";
+      });
+    </script> 
+</body>
+</html>

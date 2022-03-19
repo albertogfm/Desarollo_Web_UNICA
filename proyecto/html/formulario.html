@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" href="../media/icon.png">
+     <!--Fuentes de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=El+Messiri&display=swap" rel="stylesheet">
+    <!--Librería de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Icono de menú-->
+     <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!--estilos-->
+    <link rel="stylesheet" href="../css/formulario.css">   
+    <!--Titulo-->
+    <title>Apex Legends</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../media/icon.png" alt="Icon" id="icono">
+            <h1><strong id="title">Apex Legends</strong></h1>
+        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">Inicio</a>
+            <a href="AcercaDe.html">Acerca de</a>
+            <a href="formulario.html">Registro</a>
+            <a href="destacado.html">Destacado</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>    
+    </header>
+    
+    
+    <main >
+        <div id="formulario">
+            <h1 id="registrate">Regístrate</h1>
+            <h3 class="ask_r">¿Quieres unirte al club? <br> Ingresa tus datos correctamente y  responderemos tu solicitud en un máximo de 24 horas</h3>
+            <form id="form_f" action="respuesta.html" method="post">
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="far fa-address-card"></i>
+                </div>
+                <label>GamerTag:</label>
+                </div>
+                <input type='text' class="input" name='cuenta' placeholder='999999999' autocomplete="off" pattern='^[0-9]{9}' title="9 dígitos" required>
+            </div>
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <label>Fecha de nacimiento:</label>
+                </div>
+                <input type="date" class="input" id="fecha" name="fecha" autocomplete="off" title="dd/mm/aaaa" required value=""> <br>
+            </div>
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <label>Nombre:</label>
+                </div>
+                <input type='text' class="input" name='nombre' placeholder='Nombre' autocomplete="off" title="Solo letras" pattern='^[A-Za-zá-úÁ-Úä-üÄ-Ü ]+$' required>
+            </div>
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <label>Apellido paterno:</label>
+                </div>
+                <input type='text' class="input" name='app' placeholder='Apellido' autocomplete="off" title="Solo letras" pattern='^[A-Za-zá-úÁ-Úä-üÄ-Ü ]+$' required>
+            </div>
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <label>Apellido materno:</label>
+                </div>
+                <input type='text' class="input" name='apm' placeholder='Apellido' autocomplete="off" title="Solo letras" pattern='^[A-Za-zá-úÁ-Úä-üÄ-Ü ]+$'>
+            </div>
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <label>E-mail:</label>
+                </div>
+                <input type='text' class="input" name='correo' placeholder='correo@gmail.com' title="Por lo menos arroba y dominio" autocomplete="off" pattern="^[!-Ý]+@[!-Ý]+\.[!-Ý]+$" required>
+            </div>
+            <!--Cada dato recogido esta dividido separado en un "renglón"-->
+            <div class="renglon">
+                <div class="respuesta_r">
+                <div class="icon">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                </div>
+                <label>Contraseña:</label>
+                </div>
+                <input type='password' class="input" name='pass' placeholder='*******' autocomplete="off" minlength='7' maxlength='17' title="Más de 7 caracteres owo" required>
+            </div>
+            <input type='hidden' name='registro' value='alumno'>
+            <input id="boton" type='submit' value='Registrarme'>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div style="margin-left:3rem;">
+            <p>Soporte tecnico: </p>
+            <p>Diego Gómez & Raúl Damián</p>
+            <p>Tel.     7799999999</p>
+        </div>
+        <div id="contacto">
+            <div>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/gaming/apexlegends">Facebook</a>
+            </div>
+            <div>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/playapex/">Instagram</a>
+            </div>
+            <div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="#">unica@gmail.com</a>
+            </div>
+            
+        </div>
+        <div style="margin-right:3rem;">
+            <p>U.N.A.M.</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+  
+</body>
+</html>
