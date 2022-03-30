@@ -1,0 +1,10 @@
+Nuestro equipo está integrado por:
+
+    José Refugio Rangel de la Rosa
+    Luis Ángel Quintana Mora
+
+Link repo: https://github.com/LuisQuintana23/proyecto_diseno
+
+El proyecto es sobre el dj de música electrónica ZEDD
+
+
